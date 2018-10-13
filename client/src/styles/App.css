@@ -1,0 +1,21 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            ". . ."
+            ". main . "
+            ". . .";
+}
+
+@media only screen and (max-width: 500px){
+    .App{
+        grid-template-columns: auto;
+        grid-template-areas:
+                "."
+                "main"
+                ".";
+    }
+}
